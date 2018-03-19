@@ -70,6 +70,8 @@ mqttc.subscribe("channels/1417/subscribe/json", 0)
 # Start a background loop to receive mqtt messages
 mqttc.loop_start()
 
+blinkt.set_brightness(0.1)
+
 while True:
 	# Pick a random pixel and set it to a random color from the list
 	i = random.randint(0,numLEDs - 1)
